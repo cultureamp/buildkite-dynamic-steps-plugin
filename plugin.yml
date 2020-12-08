@@ -1,0 +1,6 @@
+name: Dynamic Steps
+description: Allows you to dynamically add steps (optionally repeatable) to your pipeline, given some parameters.
+author: https://github.com/cultureamp
+requirements: []
+configuration:
+  $schema: https://raw.githubusercontent.com/buildkite/pipeline-schema/master/schema.json

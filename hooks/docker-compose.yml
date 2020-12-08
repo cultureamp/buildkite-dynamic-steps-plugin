@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  tests:
+    image: buildkite/plugin-tester
+    volumes:
+      - ".:/plugin:ro"
+  pre-command:
+    image: node:15.3.0-stretch
+    command: yarn && ts-node .
+    working_dir: /app
+    volumes:
+      - ".:/app"
